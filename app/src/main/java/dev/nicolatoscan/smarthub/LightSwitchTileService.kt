@@ -21,7 +21,6 @@ class LightSwitchTileService: TileService() {
         super.onClick()
         val queue = Volley.newRequestQueue(this)
         val url = "http://192.168.1.69/reley1"
-
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             Response.Listener<String> { response ->
